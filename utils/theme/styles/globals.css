@@ -1,0 +1,107 @@
+:root {
+	--palette-primary1: #6c41f0;
+	--palette-primary2: #f1ecfe;
+	--palette-white: #ffffff;
+	--palette-gray1: #212121;
+	--palette-gray2: #424242;
+	--palette-gray3: #616161;
+	--palette-gray4: #757575;
+	--palette-gray5: #9e9e9e;
+	--palette-gray6: #bdbdbd;
+	--palette-gray7: #e0e0e0;
+	--palette-gray8: #e9e9e9;
+	--palette-gray9: #eeeeee;
+	--palette-gray10: #f2f2f2;
+	--palette-gray11: #f9f9f9;
+	--palette-gray12: #ffffff;
+	--palette-specialGray1: #0e0e0e;
+	--palette-blueGray1: #455681;
+	--palette-blueGray2: #737fa4;
+	--palette-blueGray3: #8d98b7;
+	--palette-blueGray4: #aab6d3;
+	--palette-blueGray5: #c1cae1;
+	--palette-blueGray6: #e8eaf4;
+	--palette-blueGray7: #f3f4f9;
+	--palette-blueGray8: #f8f9fb;
+	--palette-blueGray9: #fafbfd;
+
+	--primary: var(--palette-gray1);
+	--secondary: '';
+	--color-danger: red;
+
+	--color-text-primary: var(--palette-gray9);
+	--color-text-primary-light: var(--palette-gray8);
+	--color-text-secondary: var(--palette-gray1);
+	--color-text-subtitle: var(--palette-gray9);
+	--color-text-action: var(--palette-blueGray5);
+	--color-text-placeholder: var(--palette-gray7);
+	--color-text-disable: var(--palette-gray6);
+	--color-active-navbar: var(--palette-gray9);
+	--color-text-input: var(--palette-gray9);
+	--page-layout-background: var(--palette-specialGray1);
+}
+
+html[data-theme='light'] {
+	--color-text-primary: var(--palette-gray5);
+	--color-text-primary-light: var(--palette-blueGray2);
+	--color-text-secondary: var(--palette-gray4);
+	--color-text-subtitle: var(--palette-blueGray3);
+	--color-text-action: var(--palette-gray6);
+	--color-text-placeholder: var(--palette-white);
+	--color-text-disable: var(--palette-gray7);
+	--color-active-navbar: var(--palette-gray5);
+	--color-text-input: var(--palette-gray9);
+	--page-layout-background: var(--palette-gray1);
+}
+
+html[data-theme='dark'] {
+	--color-text-primary: var(--palette-gray9);
+	--color-text-primary-light: var(--palette-gray8);
+	--color-text-secondary: var(--palette-gray1);
+	--color-text-subtitle: var(--palette-gray9);
+	--color-text-action: var(--palette-blueGray5);
+	--color-text-placeholder: var(--palette-gray7);
+	--color-text-disable: var(--palette-gray6);
+	--color-active-navbar: var(--palette-gray9);
+	--color-text-input: var(--palette-gray9);
+	--page-layout-background: var(--palette-specialGray1);
+}
+
+html {
+	font-size: 16px;
+	/* direction: rtl; */
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+	html {
+		font-size: 15px;
+	}
+}
