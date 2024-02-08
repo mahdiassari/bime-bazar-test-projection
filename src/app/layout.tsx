@@ -7,6 +7,7 @@ import "../../utils/theme/styles/globals.css";
 export const metadata: Metadata = {
   title: "Bime Bazar",
   description: "Test Project",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
