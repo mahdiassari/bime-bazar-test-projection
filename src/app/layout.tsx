@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '../../utils/theme/theme';
-import ThemeRegistry from "../../utils/theme/themeRegistry";
-import "../../utils/theme/styles/globals.css";
+import theme from '@/utils/theme/theme';
+import ThemeRegistry from "@/utils/theme/themeRegistry";
+import "@/utils/theme/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Bime Bazar",
@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body>
-        <ThemeRegistry options={{ key: 'mui-theme' }}>
+        <ThemeRegistry>
           <ThemeProvider theme={theme}>
             {children}
           </ThemeProvider>

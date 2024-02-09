@@ -1,0 +1,55 @@
+@import "@/utils/theme/styles/variables.scss";
+
+.addressDrawerContainer {
+  @include col;
+
+  max-height: 29rem;
+  max-width: unset;
+}
+
+.addressDrawerHeader {
+  @include row;
+
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.addressDrawerHeaderTitle {
+  font-weight: 600;
+}
+
+.addressesContainer {
+  @include col;
+
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1.25rem 1.344rem 0;
+  overflow: auto;
+}
+
+.addressDrawerOptionContainer {
+  @include col;
+
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.addressDrawerOptionDetails {
+  color: #757575;
+  font-size: 0.75rem;
+  margin-right: 2rem;
+}
+
+.addressesConfirmButtonContainer {
+  @include row;
+
+  width: 100%;
+  padding: 1.25rem;
+  box-shadow: 0px 3px 15px 3px #2222221a;
+
+  .addressesConfirmButton {
+    width: 100%;
+  }
+}

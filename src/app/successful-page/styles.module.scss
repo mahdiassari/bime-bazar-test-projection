@@ -10,15 +10,24 @@
   justify-content: space-between;
 }
 
+.body {
+  width: 100%;
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: calc(100% - 3.25rem);
   padding: 0 1.25rem;
   position: relative;
+  margin-top: 2rem;
 }
 
-.confirmButton {
+.succeccfulMessageText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #34a862;
+}
+
+.returnButton {
+  width: 8.75rem;
   margin-left: 1.188rem;
 }

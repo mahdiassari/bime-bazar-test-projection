@@ -1,18 +1,17 @@
 'use client';
+
 import { ReactNode, useState } from 'react';
-import createCache from '@emotion/cache';
 import { useServerInsertedHTML } from 'next/navigation';
+import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import type {
-  EmotionCache,
-  Options as OptionsOfCreateCache,
-} from '@emotion/cache';
+import type { EmotionCache } from '@emotion/cache';
+import { prefixer } from 'stylis';
+import rtlPlugin from 'stylis-plugin-rtl';
 import theme from './theme';
 
 export type NextAppDirEmotionCacheProviderProps = {
-  options: Omit<OptionsOfCreateCache, 'insertionPoint'>;
   CacheProvider?: (props: {
     value: EmotionCache;
     children: ReactNode;
@@ -20,10 +19,10 @@ export type NextAppDirEmotionCacheProviderProps = {
   children: ReactNode;
 };
 
-export default function ThemeRegistry(props: NextAppDirEmotionCacheProviderProps) {
-  const { options, children } = props;
+function ThemeRegistry(props: NextAppDirEmotionCacheProviderProps) {
+  const { children } = props;
   const [{ cache, flush }] = useState(() => {
-    const cache = createCache(options);
+    const cache = createCache({ key: 'mui-theme', prepend: true, stylisPlugins: [prefixer, rtlPlugin], });
     cache.compat = true;
     const prevInsert = cache.insert;
     let inserted: any = [];
@@ -69,3 +68,5 @@ export default function ThemeRegistry(props: NextAppDirEmotionCacheProviderProps
     </CacheProvider>
   );
 }
+
+export default ThemeRegistry;
