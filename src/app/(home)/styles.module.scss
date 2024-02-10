@@ -8,6 +8,16 @@
   padding-bottom: 2rem;
   align-items: flex-end;
   justify-content: space-between;
+  
+  @media (min-width: 768px) {
+    align-items: center;
+  }
+}
+
+.body {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .container {
@@ -21,4 +31,9 @@
 
 .confirmButton {
   margin-left: 1.188rem;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
 }
