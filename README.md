@@ -1,9 +1,14 @@
 ## Technologies Used
 NEXT
+
 TYPESCRIPT
+
 MATERIAL UI
+
 FORMIK
+
 PWA
+
 ZUSTAND
 
 
@@ -21,14 +26,9 @@ yarn
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 
-## Recommendation
 
-build the project
+## Recommend To Build
 
 npm run build
 # then
